@@ -2,6 +2,12 @@
 
 https://github.com/nerfstudio-project/nerfstudio
 
+I'm using this image. ~~`nvidia/cuda:11.8.0-base-ubuntu22.04`~~
+
+`nvidia/cuda:11.3.0-base-ubuntu20.04`
+11.3.0-cudnn8-devel-ubuntu20.04 (11.3.0/ubuntu20.04/devel/cudnn8/Dockerfile)
+
+11.3.0-devel-ubuntu20.04 (11.3.0/ubuntu20.04/devel/Dockerfile)
 ```
 cd /workspace
 mkdir temp
@@ -19,13 +25,18 @@ cd /workspace/anaconda/bin
 Run this code
 ```bash
 apt-get update
-apt-get install build-essential git  libgl1-mesa-glx libglib2.0-0  nvidia-cuda-toolkit -y
+apt-get install build-essential git  libgl1-mesa-glx libglib2.0-0   -y
+# apt-get install  nvidia-cuda-toolkit -y
+
+export PATH="/usr/local/cuda-11.3/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-11.3/lib64:$LD_LIBRARY_PATH"
 
 conda create --name nerfstudio -y python=3.8
 conda activate nerfstudio
 python -m pip install --upgrade pip
 pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+
 pip install nerfstudio
 mkdir nerfstudioclone
 cd nerfstudioclone
