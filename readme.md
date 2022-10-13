@@ -18,6 +18,9 @@ cd /workspace/anaconda/bin
 
 Run this code
 ```bash
+apt-get update
+apt-get install libgl1-mesa-glx libglib2.0-0  nvidia-cuda-toolkit -y
+
 conda create --name nerfstudio -y python=3.8
 conda activate nerfstudio
 python -m pip install --upgrade pip
@@ -30,8 +33,7 @@ git clone https://github.com/nerfstudio-project/nerfstudio.git
 ns-download-data --dataset=blender
 ns-download-data --dataset=nerfstudio --capture=poster
 
-apt-get update
-apt-get install libgl1-mesa-glx libglib2.0-0 -y
+
 ```
 
 ENVIROMENT is `nerfstudio`
