@@ -19,7 +19,7 @@ cd /workspace/anaconda/bin
 Run this code
 ```bash
 apt-get update
-apt-get install build-essential  libgl1-mesa-glx libglib2.0-0  nvidia-cuda-toolkit -y
+apt-get install build-essential git  libgl1-mesa-glx libglib2.0-0  nvidia-cuda-toolkit -y
 
 conda create --name nerfstudio -y python=3.8
 conda activate nerfstudio
