@@ -14,7 +14,7 @@ chmod +x Miniconda3-py37_4.12.0-Linux-x86_64.sh
 # I had to move to the anaconda location to find conda
 cd /workspace/anaconda/bin
 ./conda init bash
-``
+```
 
 Run this code
 ```bash
