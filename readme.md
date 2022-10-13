@@ -2,6 +2,20 @@
 
 https://github.com/nerfstudio-project/nerfstudio
 
+```
+cd /workspace
+mkdir temp
+mkdir anaconda
+mkdir git
+cd temp
+wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh
+chmod +x Miniconda3-py37_4.12.0-Linux-x86_64.sh
+./Miniconda3-py37_4.12.0-Linux-x86_64.sh -b -f -p /workspace/anaconda
+# I had to move to the anaconda location to find conda
+cd /workspace/anaconda/bin
+./conda init bash
+``
+
 Run this code
 ```bash
 conda create --name nerfstudio -y python=3.8
