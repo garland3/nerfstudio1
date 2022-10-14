@@ -60,4 +60,5 @@ ns-train vanilla-nerf
 OR 
 ```
 ns-train nerfacto
+ns-train nerfacto --vis viewer --data data/nerfstudio/poster --viewer.websocket-port 444
 ```
