@@ -14,9 +14,13 @@ mkdir temp
 mkdir anaconda
 mkdir git
 cd temp
-wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh
-chmod +x Miniconda3-py37_4.12.0-Linux-x86_64.sh
-./Miniconda3-py37_4.12.0-Linux-x86_64.sh -b -f -p /workspace/anaconda
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh
+chmod +x Miniconda3-py38_4.12.0-Linux-x86_64.sh
+./Miniconda3-py38_4.12.0-Linux-x86_64.sh -b -f  -p /workspace/anaconda
+
+export PATH="/workspace/anaconda/bin:$PATH"
+
 # I had to move to the anaconda location to find conda
 cd /workspace/anaconda/bin
 ./conda init bash
