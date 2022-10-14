@@ -36,6 +36,9 @@ conda activate nerfstudio
 python -m pip install --upgrade pip
 pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+```
+nerf stuff
+```
 
 pip install nerfstudio
 mkdir nerfstudioclone
