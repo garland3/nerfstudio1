@@ -36,6 +36,7 @@ cmake . -B build
 cmake --build build --config RelWithDebInfo -j
 # pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
+cd /home/root/
 
 pip install nerfstudio
 mkdir nerfstudioclone
