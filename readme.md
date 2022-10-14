@@ -56,3 +56,8 @@ train some code
 ```
 ns-train vanilla-nerf
 ```
+
+OR 
+```
+ns-train nerfacto
+```
