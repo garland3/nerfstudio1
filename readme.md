@@ -75,3 +75,8 @@ ns-train nerfacto --vis viewer --data data/nerfstudio/poster --trainer.load_dir 
 1. install docker. https://docs.docker.com/engine/install/ubuntu/
 2. clone this repo
 3. `sudo docker build --pull --rm  -t nerfstudio1:latest .`
+# login into docker hub and make a token.  https://docs.docker.com/docker-hub/access-tokens/
+4. `sudo docker login -u myusername`
+then given your token
+4. `sudo docker tag nerfstudio1 myusername/nerfstudio1`
+5. `sudo docker push myusername/nerfstudio1`
