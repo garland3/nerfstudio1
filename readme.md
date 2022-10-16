@@ -68,3 +68,10 @@ ns-train nerfacto
 ns-train nerfacto --vis viewer --data data/nerfstudio/poster --viewer.websocket-port 444
 ns-train nerfacto --vis viewer --data data/nerfstudio/poster --trainer.load_dir outputs/data-nerfstudio-poster/nerfacto/{timestamp}/nerfstudio_models --viewer.websocket-port 444
 ```
+
+
+## Docker file
+* trying to build it on lambda labs gpu server
+1. install docker. https://docs.docker.com/engine/install/ubuntu/
+2. clone this repo
+3. `sudo docker build --pull --rm  -t nerfstudio1:latest .`
