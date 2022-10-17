@@ -30,6 +30,7 @@ RUN python -m pip install --upgrade pip
 # RUN pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 # RUN pip install cudatoolkit
 RUN conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch -y
+RUN conda install -c conda-forge ffmpeg
 # # https://discourse.cmake.org/t/correct-use-of-cmake-cuda-architectures/1250/3
 ENV TCNN_CUDA_ARCHITECTURES="52, 61, 75"
 RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
